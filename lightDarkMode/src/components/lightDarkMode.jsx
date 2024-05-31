@@ -1,7 +1,7 @@
 import useLacalStorage from "./useLacalStorage";
 
 const lightDarkMode = () => {
-  const [theme, setTheme] = useLacalStorage("theme", "dark");
+  const [theme, setTheme] = useLocalStorage("theme", "dark");
 
   function handleToggleTheme() {
     setTheme(theme === "light" ? "Dark" : "light");
@@ -11,7 +11,7 @@ const lightDarkMode = () => {
   return (
     <div>
       <h1 className="text-8xl font-bold text-center hover:text-cyan-500 mt-32 items-center">
-        Hello Create 5 Projects today 31/25/2024
+        Hello Create 5 Projects today 31/05/2024
       </h1>
       <button
         onClick={handleToggleTheme}
